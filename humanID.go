@@ -2,7 +2,7 @@ package humanID
 
 import (
 	// "errors"
-	payload "./payload"
+	payload "github.com/bluenumberfoundation/humanid-golang-sdk/payload"
 	httpHelper "github.com/bluenumberfoundation/humanid-golang-sdk/helpers/http"
 )
 
