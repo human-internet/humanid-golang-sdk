@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  tests:
+    build: 
+      context: ./
+    command: >
+      bash -c "dep ensure && go test humanID.go humanID_test.go -v"
+    volumes:
+      - ./:/go/src/github.com/bluenumberfoundation/humanid-golang-sdk/
