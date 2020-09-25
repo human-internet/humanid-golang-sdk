@@ -7,3 +7,9 @@
 ```
 docker-compose up
 ```
+
+To Import SDK
+```
+go get -u github.com/bluenumberfoundation/humanid-golang-sdk
+```
+
