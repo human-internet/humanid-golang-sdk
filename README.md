@@ -1,5 +1,5 @@
 # Run Tests
-## Pre-requisites:
+## Pre-requisites (only for testing):
 - docker
 - docker-compose
 
@@ -8,7 +8,7 @@
 docker-compose up
 ```
 
-To Import SDK
+# To Import SDK
 ```
 go get -u github.com/bluenumberfoundation/humanid-golang-sdk
 ```
