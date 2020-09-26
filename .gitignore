@@ -2,3 +2,5 @@
 Gopkg.lock
 tmp/
 .env
+
+vendor
