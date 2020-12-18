@@ -10,6 +10,7 @@ const SERVER_HOST = "https://core.human-id.org/v0.0.3/server/"
 
 type HumanID interface {
 	Login(lang string, clientSecret string) (*payload.LoginResp, error)
+	VerifyToken(exchangeToken string) (*payload.VerifyTokenResp, error)
 }
 
 type HumanIDImpl struct {
@@ -39,4 +40,23 @@ func (h HumanIDImpl) Login(lang string, clientSecret string) (*payload.LoginResp
 		return nil, err
 	}
 	return loginResp, nil
+}
+
+func (h HumanIDImpl) VerifyToken(exchangeToken string) (*payload.VerifyTokenResp, error) {
+	verifyTokenReq := &payload.VerifyTokenReq{
+		ExchangeToken: exchangeToken,
+	}
+	verifyTokenResp := &payload.VerifyTokenResp{}
+
+	err := httpHelper.Post(
+		SERVER_HOST + "users/exchange",
+		verifyTokenReq,
+		verifyTokenResp,
+		h.serverClientID,
+		h.serverClientSecret,
+	)
+	if err != nil {
+		return nil, err
+	}
+	return verifyTokenResp, nil
 }
