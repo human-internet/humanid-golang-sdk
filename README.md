@@ -22,7 +22,6 @@ go get -u github.com/bluenumberfoundation/humanid-golang-sdk
 You can access all the package dependencies in the vendor folder
 
 ## Sample Codes using "net/http" library
-### Initialization
 #### main.go
 ```
 package main
