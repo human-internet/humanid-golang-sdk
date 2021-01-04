@@ -4,7 +4,7 @@ humanid-golang-sdk is the official sdk for [HumanID](https://human-id.org/).
 
 Content:
 - [Getting Started](#getting-started)
-- [Examples](#examples)
+- [Examples](#sample-codes-using-"net/http"-library)
 - [Contributing](#contributing)
 
 

@@ -1,0 +1,37 @@
+version: '3.3'
+services:
+  demo:
+    build: ./backend
+    command: >
+      bash -c "dep ensure -update github.com/bluenumberfoundation/humanid-golang-sdk && fresh"
+    volumes:
+      - ./backend:/go/src/github.com/bluenumberfoundation/humanid-golang-demo/
+    ports:
+      - "4000:4000"
+    env_file:
+      - ./backend/.env
+  client:
+    build: ./client/human-id-demo
+    command: >
+      bash -c "yarn start"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/client
+    links:
+      - demo
+  nginx:
+    build: ./nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /etc/nginx/cert:/etc/nginx/cert
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    links:
+      - demo
+      - client
+    ulimits:
+      nofile:
+        soft: 98304
+        hard: 98304
