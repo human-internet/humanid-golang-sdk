@@ -19,7 +19,10 @@ For the latest version of the SDK:
 go get -u github.com/bluenumberfoundation/humanid-golang-sdk
 ```
 ### Dependencies
-You can access all the package dependencies in the vendor folder
+- "encoding/json"
+- "io"
+- net/http"
+- "bytes"
 
 ## Sample Codes using "net/http" library
 #### main.go
