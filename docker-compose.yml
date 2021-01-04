@@ -7,3 +7,5 @@ services:
       bash -c "dep ensure && go test humanID.go humanID_test.go -v"
     volumes:
       - ./:/go/src/github.com/bluenumberfoundation/humanid-golang-sdk/
+    env_file: 
+      - ./.env
