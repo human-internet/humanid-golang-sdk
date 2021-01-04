@@ -180,6 +180,8 @@ SERVER_SECRET=[REPLACE_ME]
 CLIENT_ID=[REPLACE_ME]
 CLIENT_SECRET=[REPLACE_ME]
 ```
+
+You can access the full demo source file in the demo folder
 ## Contributing
 ### Run Tests
 #### Pre-requisites (only for testing):
