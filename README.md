@@ -21,7 +21,7 @@ go get -u github.com/bluenumberfoundation/humanid-golang-sdk
 ### Dependencies
 - "encoding/json"
 - "io"
-- net/http"
+- "net/http"
 - "bytes"
 
 ## Sample Codes using "net/http" library
