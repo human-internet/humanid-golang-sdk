@@ -196,4 +196,4 @@ docker-compose up
 ```
 ## License
 Copyright 2019-2020 Bluenumber Foundation\
-Licensed under the GNU General Public License v3.0 [(LICENSE)]https://github.com/human-internet/humanid-golang-sdk/blob/master/LICENSE
+Licensed under the GNU General Public License v3.0 [(LICENSE)](https://github.com/human-internet/humanid-golang-sdk/blob/master/LICENSE)
