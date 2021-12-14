@@ -1,6 +1,6 @@
 
-# HumanID SDK for Go
-humanid-golang-sdk is the official sdk for [HumanID](https://human-id.org/).
+# humanID SDK for Go
+humanid-golang-sdk is the official sdk for [humanID](https://human-id.org/).
 
 Content:
 - [Getting Started](#getting-started)
